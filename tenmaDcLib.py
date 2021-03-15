@@ -27,7 +27,7 @@ class Tenma72_2540:
     """
         Control a tenma 72-2540 DC power supply
     """
-    def __init__(self, serialPort, debug=False):
+    def __init__(self, serialPort, debug=True):
         self.ser = serial.Serial(port=serialPort,
             baudrate=9600,
             parity=serial.PARITY_NONE,
